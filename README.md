@@ -8,7 +8,7 @@ npm install react-comparison-table --save
 ```
 ## Demo
 Click
-**[here]()for demo.**
+**[here]( https://kuncheria-kuruvilla.github.io/react-comparison-table/) for demo.**
 
 ## Usage
 ```

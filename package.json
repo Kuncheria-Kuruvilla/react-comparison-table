@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
-  "repository": "https://github.com/Kuncheria-Kuruvilla/my-compare-table-tial-component",
+  "repository": "https://github.com/Kuncheria-Kuruvilla/react-comparison-table",
   "directories": {
     "example": "examples"
   },
