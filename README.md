@@ -53,11 +53,7 @@ render(<App />, document.getElementById("root"));
 
 ```
 ### Item hiding
-This option gives you the option to hide products. To enable the item hiding option use the property 
-```js 
-hideItemOption
-```
-.
+This option gives you the option to hide products. To enable the item hiding option use the property `hideItemOption`.
 
 ```js
     <CompareChart 
@@ -68,16 +64,10 @@ hideItemOption
 ```
 
 On enabling the option a trash icon appears next item names in the chart. By default clicking the trash icon removes that item from the list of items provided to the 
-```js 
-data
-``` 
-property.
+`data` property.
 
 You can override this behavior by using the
-```js
-onHide
-```
-property.
+`onHide` property.
 
 ```js
 const App = () => (
