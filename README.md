@@ -11,9 +11,8 @@ Click
 **[here]( https://kuncheria-kuruvilla.github.io/react-comparison-table/) for demo.**
 
 ## Usage
-```
 Here is how to get things started.
-```
+
 ```js
 import React from 'react';
 import { render } from 'react-dom';
@@ -53,3 +52,45 @@ const App = () => (
 render(<App />, document.getElementById("root"));
 
 ```
+### Item hiding
+This option gives you the option to hide products. To enable the item hiding option use the property 
+```js 
+hideItemOption
+```
+.
+
+```js
+    <CompareChart 
+    data={data} 
+    features={["feature1","feature3"]} 
+    hideItemOption = {true}
+    />
+```
+
+On enabling the option a trash icon appears next item names in the chart. By default clicking the trash icon removes that item from the list of items provided to the 
+```js 
+data
+``` 
+property.
+
+You can override this behavior by using the
+```js
+onHide
+```
+property.
+
+```js
+const App = () => (
+    <div style={{width:"75%", marginLeft:"auto", marginRight:"auto", marginTop: "5%"}}>
+    <CompareChart 
+    data={data} 
+    features={["feature1","feature3"]} 
+    hideItemOption = {true}
+    onHide = {onHideCallback}
+    />
+    </div>
+);
+const onHideCallback = (product_id) => {
+    console.log("Hide product with id - " + product_id);
+}
+``` 

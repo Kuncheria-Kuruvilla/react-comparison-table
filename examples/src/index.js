@@ -26,11 +26,18 @@ var data = [
     feature3: "feature 3 of product 4" }
 ];
 const App = () => (
-    <div style={{width:"75%", marginLeft:"auto", marginRight:"auto"}}>
+    <div style={{width:"75%", marginLeft:"auto", marginRight:"auto", marginTop: "5%"}}>
     <CompareChart 
     data={data} 
-    features={["feature1","feature3"]}/>
+    features={["feature1","feature3"]} 
+    hideItemOption = {true}
+    // onHide = {onHideCallback}
+    />
     </div>
 );
+
+const onHideCallback = (product_id) => {
+    console.log("Hide product with id - " + product_id);
+}
 
 render(<App />, document.getElementById("root"));

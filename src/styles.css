@@ -4,3 +4,34 @@ h1 {
 .product-image{
     max-height: 130px;
 }
+
+.product-name-header,
+.product-image{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.product-name-header-item{
+    padding-top: 10px;
+    text-align: center;
+}
+.product-name-header{
+    border-top: 1px solid #ddd;
+}
+.product-name{
+    border-right: 1px solid #ddd;
+}
+.remove-porduct-btn{
+    cursor: pointer;
+}
+.feature-header ,
+.feature-value,
+.btn-table-header {
+    border-top: 1px solid #ddd !important;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.btn-table-header {
+    padding: 0px !important;
+}
