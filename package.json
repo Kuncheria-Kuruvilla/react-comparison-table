@@ -40,5 +40,12 @@
   },
   "dependencies": {
     "react-bootstrap": "^0.32.4"
-  }
+  },
+  "keywords":[
+    "react",
+    "data-table",
+    "comparison-table",
+    "react-table",
+    "react-component"
+    ]
 }
